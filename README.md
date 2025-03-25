@@ -11,4 +11,4 @@ O resultado (se o número é primo ou não) é exibido em um elemento HTML, com 
 
 O estilo do resultado é alterado dinamicamente, aplicando classes CSS diferentes dependendo se o número é primo ou não.
 
-ps: Professor, atualizei o código adicionando o código java por meio da tag <a>.
+ps: Professor, atualizei o código adicionando a implementação em java por meio da tag <a>.
