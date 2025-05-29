@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Número Primo</title>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Verifique se um número é primo</h1>
-        <a href="https://github.com/siilverx/Entregavel1/blob/main/NumeroPrimo.java" target="_blank">Clique aqui para ver o mesmo código mas na linguagem Java!</a>
-        <input type="number" id="numero" placeholder="Digite um número">
-        <button onclick="verificarPrimo()">Verificar</button>
-        <p id="resultado"></p>
-    </div>
+    <h1>Algoritmos Fundamentais</h1>
+
+<nav>
+  <button onclick="mostrarFormulario('somatorio')">Somatório</button>
+  <button onclick="mostrarFormulario('ordenacao')">Ordenação</button>
+  <button onclick="mostrarFormulario('fibonacci')">Fibonacci</button>
+  <button onclick="mostrarFormulario('mdc')">MDC</button>
+  <button onclick="mostrarFormulario('numeroPrimo')">Número Primo</button>
+  <button onclick="mostrarFormulario('contagem')">Contagem</button>
+</nav>
+
+<div class="container">
+
+  <!-- Somatório -->
+  <form id="form-somatorio" onsubmit="calcularSomatorio(event)">
+    <label>Digite números separados por vírgula:</label>
+    <input type="text" id="somatorio-numeros" placeholder="Ex: 1,2,3,4" required />
+    <button type="submit">Calcular Somatório</button>
+  </form>
+
+  <!-- Ordenação -->
+  <form id="form-ordenacao" onsubmit="calcularOrdenacao(event)">
+    <label>Digite números separados por vírgula:</label>
+    <input type="text" id="ordenacao-numeros" placeholder="Ex: 4,2,8,1" required />
+    <button type="submit">Ordenar</button>
+  </form>
+
+  <!-- Fibonacci -->
+  <form id="form-fibonacci" onsubmit="calcularFibonacci(event)">
+    <label>Digite a quantidade de termos:</label>
+    <input type="number" id="fibonacci-termos" min="1" max="100" value="10" required />
+    <button type="submit">Gerar Fibonacci</button>
+  </form>
+
+  <!-- MDC -->
+  <form id="form-mdc" onsubmit="calcularMDC(event)">
+    <label>Digite dois números:</label>
+    <input type="number" id="mdc-num1" required />
+    <input type="number" id="mdc-num2" required />
+    <button type="submit">Calcular MDC</button>
+  </form>
+
+  <!-- Número Primo -->
+  <form id="form-numeroPrimo" onsubmit="verificarPrimo(event)">
+    <label>Digite um número:</label>
+    <input type="number" id="primo-numero" min="2" required />
+    <button type="submit">Verificar Primo</button>
+  </form>
+
+  <!-- Contagem -->
+  <form id="form-contagem" onsubmit="calcularContagem(event)">
+    <label>Digite um número para contagem de 1 até ele:</label>
+    <input type="number" id="contagem-numero" min="1" required />
+    <button type="submit">Contar</button>
+  </form>
+
+  <div id="resultado"></div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
