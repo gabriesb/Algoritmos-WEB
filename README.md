@@ -1,14 +1,43 @@
-# Verificador-de-n-meros-primos
+# Algoritmos Fundamentais – Interface Web + Java
 
-Como funciona:
-O número é inserido pelo usuário em um campo de entrada HTML.
+Este projeto apresenta uma **interface web interativa** com algoritmos fundamentais da programação, além de um **link para rodar o código Java online**.
 
-A função verifica se o número é maior que 1. Caso contrário, uma mensagem de erro é exibida pedindo para inserir um número maior que 1.
+## 🧠 Algoritmos Implementados
 
-Se o número for válido, a função verifica se ele é primo. A verificação é feita tentando dividir o número por todos os números de 2 até a raiz quadrada dele. Se o número for divisível por qualquer número dentro desse intervalo, ele não é primo.
+- ✅ Somatório
+- ✅ Ordenação (crescente)
+- ✅ Sequência de Fibonacci
+- ✅ Máximo Divisor Comum (MDC)
+- ✅ Verificação de Número Primo
+- ✅ Contagem baseada em array fixo
+- ✅ Execução equivalente em Java via JDoodle
 
-O resultado (se o número é primo ou não) é exibido em um elemento HTML, com uma mensagem correspondente.
+---
 
-O estilo do resultado é alterado dinamicamente, aplicando classes CSS diferentes dependendo se o número é primo ou não.
+## 🌐 Interface Web (HTML + JavaScript)
 
-ps: Professor, atualizei o código adicionando a implementação em java por meio da tag <a>.
+### 🔧 Como rodar localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/algoritmos-fundamentais.git
+   cd algoritmos-fundamentais
+Abra o arquivo index.html no navegador:
+
+Clique duas vezes no arquivo index.html
+OU
+
+Use uma extensão como o Live Server no VSCode
+
+Escolha um algoritmo no menu e forneça os dados para ver o resultado.
+
+☕ Código Java (Modo Console)
+O código Java implementa os mesmos algoritmos com menu no terminal.
+
+👨‍💻 Executar localmente
+Compile:
+
+javac AlgoritmosFundamentais.java
+Execute:
+
+java AlgoritmosFundamentais
